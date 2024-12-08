@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafe No 7!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+
+        header {
+            background-color:palegreen;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-family: cursiv;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: black;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-bottom: 2px solid darkblue;
+            padding-bottom: 10px;
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: white;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px;
+            border-radius: 8px;
+            transition: transform 0.9s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .menu-item-details {
+            flex-grow: 1;
+        }
+
+        .menu-item-name {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .menu-item-description {
+            font-size: 1rem;
+            color: #777;
+            margin: 5px 0;
+        }
+
+        .menu-item-price {
+            font-size: 1.2rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .drink-size {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 1000px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item img {
+                margin-bottom: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cafe No 7</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Coffee Section -->
+        <section class="menu-category">
+            <h2>Coffee</h2>
+            <div class="menu-item">
+                <img src="Espresso.jpeg" alt="Espresso" />
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Espresso</span>
+                    <span class="menu-item-description">Strong, black coffee brewed by forcing steam through finely ground coffee beans.</span>
+                    <span class="drink-size">Available in Small, Medium, Large</span>
+                </div>
+                <span class="menu-item-price">₹180</span>
+            </div>
+            <div class="menu-item">
+                <img src="latte.jpeg" alt="Latte">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Latte</span>
+                    <span class="menu-item-description">Espresso with steamed milk and a thin layer of foam on top.</span>
+                    <span class="drink-size">Available in Small, Medium, Large</span>
+                </div>
+                <span class="menu-item-price"> ₹140</span>
+            </div>
+            <div class="menu-item">
+                <img src="cappuccino.jpeg" alt="Cappuccino">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Cappuccino</span>
+                    <span class="menu-item-description">Espresso mixed with steamed milk and topped with frothed milk.</span>
+                    <span class="drink-size">Available in Small, Medium, Large</span>
+                </div>
+                <span class="menu-item-price"> ₹150</span>
+            </div>
+        </section>
+
+        <!-- Tea Section -->
+        <section class="menu-category">
+            <h2>Tea</h2>
+            <div class="menu-item">
+                <img src="greentea.jpeg" alt="Green Tea">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Green Tea</span>
+                    <span class="menu-item-description">A refreshing herbal tea with a delicate flavor and mild aroma.</span>
+                    <span class="drink-size">Available in Small, Medium, Large</span>
+                </div>
+                <span class="menu-item-price"> ₹70</span>
+            </div>
+            <div class="menu-item">
+                <img src="rosetea.jpeg" alt="Rose Tea">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Rose Tea</span>
+                    <span class="menu-item-description">A Soothing and Authentic Flavour of Rose flower.</span>
+                    <span class="drink-size">Available in Small, Medium, Large</span>
+                </div>
+                <span class="menu-item-price"> ₹90</span>
+            </div>
+        </section>
+
+        <!-- Milkshakes Section-->
+        <section class="menu-category">
+            <h2>MilkShakes</h2>
+            <div class="menu-item">
+                <img src="butterscotch.jpeg" alt="ButterScotch Milkshake">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Butterscotch Milkshake</span>
+                    <span class="menu-item-description">Sweet and Tasty Butterscotch Flavour for you.</span>
+                </div>
+                <span class="menu-item-price"> ₹190</span>
+            </div>
+            <div class="menu-item">
+                <img src="sharja.jpeg" alt="Sharja">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Sharja Shake</span>
+                    <span class="menu-item-description">Blend of Chocolate,Banana and nuts in one cup</span>
+                </div>
+                <span class="menu-item-price"> ₹180</span>
+            </div>
+            <div class="menu-item">
+                <img src="ferrororocher.jpeg" alt="FerroroRocher">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Ferroro Rocher Shake</span>
+                    <span class="menu-item-description">Experience the world-class premium Milkshake</span>
+                </div>
+                <span class="menu-item-price"> ₹350</span>
+            </div>
+        </section>
+
+        <!--Buns and Breads Section-->
+        <section class="menu-category">
+            <h2>BUNS AND BREADS</h2>
+            <div class="menu-item">
+                <img src="sandwich.jpeg" alt="Sandwich">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Sandwich</span>
+                    <span class="menu-item-description">Vibrant Flavours of our fresh veggies or meat meets layers of delectable goodness.</span>
+                </div>
+                <span class="menu-item-price"> ₹130</span>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpeg" alt="burger">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Burger</span>
+                    <span class="menu-item-descripion">2 lip Smacking Veggies and Meat</span>
+                </div>
+                <span class="menu-item-price">₹150</span>
+            </div>
+        </section>
+        <!-- Specials Section -->
+        <section class="menu-category">
+            <h2>Specials</h2>
+            <div class="menu-item">
+                <img src="icedcoffee.jpeg" alt="Iced Coffee">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Iced Coffee</span>
+                    <span class="menu-item-description">Cold brewed coffee served over ice, perfect for warm days.</span>
+                </div>
+                <span class="menu-item-price"> ₹150</span>
+            </div>
+            <div class="menu-item">
+                <img src="affogato.jpeg" alt="Affogato">
+                <div class="menu-item-details">
+                    <span class="menu-item-name">Affogato</span>
+                    <span class="menu-item-description">A scoop of vanilla ice cream topped with a shot of hot espresso.</span>
+                </div>
+                <span class="menu-item-price"> ₹220</span>
+            </div>
+        </section>
+
+        <div class="cta">
+            <button onclick="alert('Thanks for visiting! Come in and enjoy your drink!')">Order
